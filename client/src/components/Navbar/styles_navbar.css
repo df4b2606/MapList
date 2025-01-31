@@ -1,0 +1,59 @@
+.navbar {
+  background-color: rgb(223, 242, 242);
+  color: azure;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.navbar img {
+  /* 自定义 logo 样式 */
+  transition: transform 0.2s;
+}
+
+.navbar img:hover {
+  transform: scale(1.1); /* hover 时略微放大 */
+}
+
+.navbar-container {
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  gap: 10px; /* 图片和文字之间的间距 */
+  margin-left: 5px;
+  margin-right: 10px;
+  height: 35px;
+}
+
+.brand-text {
+  font-family: "Grand Hotel", cursive;
+  font-size: 23px;
+  color: #262626;
+  margin-left: 10px;
+  transition: all 0.3s ease;
+}
+.brand-container {
+  display: flex; /* 使用 Flexbox 布局 */
+  align-items: center; /* 垂直居中对齐 */
+  gap: 10px; /* 图片和文字之间的间距 */
+}
+
+.nav-item {
+  margin: 0 10px;
+  font-size: 18px; /* Adjust font size */
+  display: inline-flex; /* Ensures consistent text alignment */
+  align-items: center; /* Default alignment */
+}
+
+.nav-item.active {
+  font-weight: bold;
+  border-bottom: 3px solid var(--bs-primary); /* Bootstrap primary color */
+  padding-bottom: 0; /* Reduce space below */
+  transform: translateY(-5px); /* Moves text up only when active */
+}
+.login-button {
+  background-color: rgb(223, 242, 242);
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 10px;
+}
